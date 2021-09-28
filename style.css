@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+/*//////////font imports///////////////*/
+
+
+/*//////////////reset codes//////////////////*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+}
+
+
+body {
+background-color: #ecf1fd;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+:root {
+    --border_c: #D0D5DB;
+    --ff1: 'Ubuntu', sans-serif;
+    --brr: 5px;
+    --pc: #6366f0;
+}
+
+
+/*//////////////utility classes////////////////*/
+.bold_f {
+    font-weight: bold;
+}
+
+
+
+/*////////////////Nav Bar////////////////*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: var(--pc);
+    border-radius: var(--brr);
+}
+
+#heading {
+    color: white;
+    font-size: 3rem;
+    font-family: var(--ff1);
+}
+
+
+
+/*/////////////sub-heading section////////////*/
+.sub-heading {
+    text-align: center;
+    padding: 10px;
+    font-family: var(--ff1);
+    height: 60px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: var(--brr);
+}
+
+.sub-heading-text {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #6366f0;
+    line-height: 30px;
+}
+
+
+/*//////////////////io section//////////////////////*/
+.conio {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.output-area{
+    margin-left: 50px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.s_prop{
+    margin-top: 50px;
+    background-color: white;
+    width: 45vw;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/*/////////////input section/////////////*/
+.input1 {
+    margin-top: 50px;
+}
+
+.text {
+    font-family: var(--ff1);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text1 {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.text_field{
+    outline: none;
+    width: 300px;
+    height: 50px;
+    border: 2px solid var(--border_c);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.input3 {
+    margin-top: 10px;
+}
+
+#re_count {
+    height: 20px;
+    width: 160px;
+    padding: 5px;
+    border: 1px solid var(--border_c);
+    border-radius: 4px;
+    outline: none;
+}
+
+.input4 {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.re_btn {
+height: 40px;
+width: 160px;
+}
+
+#m_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--brr);
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: var(--border_c);
+
+    /*trasition for massages*/
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+
+    /*display none due to javascript usage*/
+    visibility: hidden;
+}
+
+#m_text {
+font-size: 1.1rem;
+font-weight: bold;
+}
+
+#cp_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--brr);
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: var(--border_c);
+
+    /*trasition for massages*/
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+
+    /*display none due to javascript usage*/
+    visibility: hidden;
+}
+
+#cp_text {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+
+/*////////////output section////////////////////*/
+.output-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.output_textarea {
+    width: 350px;
+    height: 200px;
+    outline: none;
+    border: 2px solid var(--border_c);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+#cp_btn {
+    width: 180px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+
+
+/*////////////////info section//////////////////*/
+.info_sec {
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--brr);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-heading{
+    font-weight: bolder;
+    font-family: var(--ff1);
+    font-size: 2.5rem;
+    color: var(--pc);
+}
+
+.info {
+    font-family: var(--ff1);
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: #6365f0c0;
+}
+
+
+
+/*////////////////footer////////////////*/
+.footer {
+    margin-top: 20px;
+    height: 80px;
+    background-color: var(--pc);;
+    text-align: center;
+    border-radius: var(--brr);
+}
+
+.footer-heading {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--ff1);
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
+/*//////////////////shared classes//////////////////////*/
+.btn {
+    background: #666AF0;
+    outline: none;
+    border: 1px solid #666AF0;
+    border-radius: var(--brr);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+}
+
+.btn:hover{
+    transform: scale(1.06);
+}
+
+.text5{
+    font-size: 1.2rem;
+    font-family: var(--ff1);
+}
+
+.chk{
+margin-bottom: 8px;
+}
+
+
+
+
+/*/////////////for 300px to 900px displays/////////////////*/
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    /*id based responsive css code*/
+    .conio {
+        flex-direction: column;
+    }
+
+    .input-area {
+        margin: 20px 0 0 0;
+    }
+
+    .output-area{
+        margin-left: 0px;
+    }
+
+    .output_textarea {
+        width: 290px;
+    }
+
+    /*class based css responsive code*/
+    .width_res {
+        width: 340px;
+        height: 400px;
+    }
+
+    .text_field {
+        height: 75px;
+    }
+}
+
+
+
+/*/////////////////500px to 700px width display///////// io section width*/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .width_res {
+        width: 500px;
+    }
+}
+
+
+
+/*/////////////////500px to 700px width display///////// io section width*/
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .width_res {
+        width: 600px;
+    }
+}

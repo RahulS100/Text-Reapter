@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Reapter</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <h3 id="heading">Text Reapter</h3>
+    </header>
+
+    <div class="sub-heading">
+        <p class="sub-heading-text">Send Retative text to your friends for fun</p>
+        <p class="sub-heading-text">Convert - Copy & Paste - Send</p>
+    </div>
+
+    <!-- the whole area -->
+    <section id="conio" class="conio">
+
+        <!-- input area -->
+        <div class="input-area s_prop width_res">
+            <div class="input1">
+                <p class="text">Text to Repeat</p>
+                <textarea type="text" class="text_field bold_f" placeholder="Text for Repeating Enter Here"
+                    id="input_f"></textarea>
+            </div>
+            <div class="input2">
+                <p class="text text1" id="words">Words: 0</p>
+                <p class="text text1" id="chars">Characters: 0</p>
+            </div>
+            <div class="input3">
+                <p class="text">Repetitions</p>
+                <input type="number" value="10" id="re_count" placeholder="Repetitions">
+            </div>
+
+            <div class="input4">
+                <div class="chk">
+                    <input type="checkbox" id="check1" class="checks">
+                    <label for="check1" class="text5">Add New line</label>
+                </div>
+                <div class="chk">
+                    <input type="checkbox" id="check2" class="checks">
+                    <label for="check2" class="text5">Add Space</label>
+                </div>
+                <div class="chk">
+                    <input type="checkbox" id="check3" class="checks">
+                    <label for="check3" class="text5">Add Period</label>
+                </div>
+                <button class="re_btn btn" id="re_btn">Repeat</button>
+                <div id="m_box">
+                    <p id="m_text">Enter text for repeatation!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- output section -->
+        <div class="output-area s_prop width_res">
+            <p class="text">Output</p>
+            <textarea class="bold_f output_textarea" id="out" placeholder="Repeated Text Here" readonly></textarea>
+            <button id="cp_btn" class="btn">Copy</button>
+            <div id="cp_box">
+                <p id="cp_text">Copied!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- info section -->
+    <div class="info_sec">
+        <h3 class="info-heading">How Text Reapter Works?</h3>
+        <p class="info">1. Type the text in input Field</p>
+        <p class="info">2. Choose From 3 Option with checkboxes</p>
+        <p class="info">3. Click on Repeat Button</p>
+        <p class="info">4. Done!!!, Copy And Send</p>
+    </div>
+
+    <footer class="footer">
+        <h4 class="footer-heading">Text-Reapter 2021</h4>
+    </footer>
+    <!--javascript linked here-->
+    <script src="app.js"></script>
+</body>
+
+</html>
